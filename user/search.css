@@ -1,0 +1,64 @@
+/*
+.searchBook{
+    outline: none;
+    border: none;
+    outline-style: solid;
+    outline: 3px solid #339af0;
+    border-radius: 4px;
+    width: 15%;
+}
+*/
+label {
+  position: relative;
+}
+input {
+  font-size: large;
+}
+.searchBook {
+  border-radius: 10px;
+  border: 2px solid #339af0;
+  width: 30%;
+  padding: 10px;
+  padding-left: 100px;
+}
+.searchBook:focus {
+  outline: none;
+}
+.searchBook::placeholder {
+  color: lightgray;
+}
+.searchBtn {
+  background-color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 2%;
+}
+select {
+  position: absolute;
+  border: none;
+  outline: none;
+  top: 20%;
+  left: 2%;
+  color: #339af0;
+  font-weight: bolder;
+}
+.rentBtn {
+  background-color: #339af0;
+  border: #339af0;
+  outline: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+}
+.bookContents {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid lightgray;
+  display: flex;
+}

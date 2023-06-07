@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+    <link rel="stylesheet" type="text/css" href="admin.css" />
+  </head>
+  <header>
+    <div class="left-section">
+      <img src="../image/lib.png" alt="이미지 설명" />
+      <!-- 왼쪽 구역 내용 -->
+    </div>
+    <div class="center-section">
+      <nav>
+        <ul>
+          <li><a href="./return.html">반납</a></li>
+          <li><a href="./bookManage.html">도서관리</a></li>
+          <li><a href="./userManage.html">유저관리</a></li>
+        </ul>
+      </nav>
+      <!-- 가운데 구역 내용 -->
+    </div>
+    <div class="right-section">
+      <a href="#">회원가입</a>
+      <a href="#">로그인</a>
+      <!-- 오른쪽 구역 내용 -->
+    </div>
+  </header>
+  <body>
+    <div class="body">
+      <h1>관리자 반납 검색</h1>
+      <div class="Return_Book_Search">
+        <table class="Return_Book_User">
+          <caption>
+            반납 페이지
+          </caption>
+          <thread>
+            <tr>
+              <th>번호</th>
+              <th>책</th>
+              <th>ID</th>
+              <th>대여일</th>
+              <th>연체일</th>
+              <th>반납</th>
+            </tr>
+          </thread>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>이것이 자바다</td>
+              <td>Rent_Book.User_no</td>
+              <td>Rent_Book.CDT</td>
+              <td>0</td>
+              <td><button type="button" class="returnbtn">반납</button></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>우리의 일그러진 영웅</td>
+              <td>Rent_Book.User_no</td>
+              <td>Rent_Book.CDT</td>
+              <td>0</td>
+              <td><button type="button" class="returnbtn">반납</button></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>노인과 바다</td>
+              <td>Rent_Book.User_no</td>
+              <td>Rent_Book.CDT</td>
+              <td>0</td>
+              <td><button type="button" class="returnbtn">반납</button></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>완득이</td>
+              <td>Rent_Book.User_no</td>
+              <td>Rent_Book.CDT</td>
+              <td>0</td>
+              <td><button type="button" class="returnbtn">반납</button></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>해리포터</td>
+              <td>Rent_Book.User_no</td>
+              <td>Rent_Book.CDT</td>
+              <td>0</td>
+              <td><button type="button" class="returnbtn">반납</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="paging">
+          <a href="#" class="bt"></a>
+          <a href="#" class="bt"></a>
+          <a href="#" class="num">1</a>
+          <a href="#" class="num">2</a>
+          <a href="#" class="num">3</a>
+          <a href="#" class="bt">></a>
+          <a href="#" class="bt">>></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
