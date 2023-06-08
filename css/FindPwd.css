@@ -1,5 +1,5 @@
 * {
-    background-color: #e7f5ff;
+    background-color: #fff;
 }
 main {
 position: relative;
@@ -13,8 +13,14 @@ padding: 60px 0 70px;
 }
 .form-wrapper h3 {
     text-align: center;
-    color: #339af0;
+    color: #6C696F;
 }
+
+.item-wrapper {
+    margin: 0 auto;
+    text-align: center;
+}
+
 
 .userId, .userEmail{
     display: block;
@@ -22,21 +28,18 @@ padding: 60px 0 70px;
     width: 90%;
     height: 11px;
     padding: 14px 18px;
-    overflow: hidden;
-    border: 1px solid rgb(214, 222, 235);
-    border-style: solid;
+    border: none;
+    border-bottom: 2px solid rgb(214, 222, 235);
     background: white;
     color: rgb(49, 53, 56);
-    margin-bottom: -1px;
     font-size: 15px;
-    border-radius: 4px;
 }
 .userId:hover {
-    border: 1px solid #74c0fc;
+    border-bottom: 2px solid #719474;
 }
 
 .userEmail:hover {
-    border: 1px solid #74c0fc;
+    border-bottom: 2px solid #719474;
 }
 
 .findIdbtn {
@@ -45,7 +48,7 @@ padding: 60px 0 70px;
     border: none;
     margin-top: 15px;
     height: 45px;
-    background-color: #339af0;
+    background-color: #719474;
     border-radius: 4px;
     font-size: 15px;
     font-weight: 700;
