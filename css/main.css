@@ -45,6 +45,7 @@ input{
     font-size: 17px;
     box-shadow: 2px 2px 2px 2px #ced4da;
     outline: none;
+    line-height:20px;
 }
 .searchBook{
     border-radius: 25px;

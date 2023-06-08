@@ -1,0 +1,64 @@
+/* 헤더 */
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header ul li {
+float: left;
+}
+
+.header ul li a {
+display: block;
+color: #444444;
+font-weight: bold;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+margin: 0px 40px 0px 40px;
+font-size: 23px;
+}
+.header ul nav{
+    float: right;
+}
+.header ul li img{
+    margin-left: 50px;
+}
+
+/* Change the link color to #111 (black) on hover */
+.header ul li a:hover {
+border-bottom: 3px solid #3C3B64;
+}
+h2{
+    display: inline-block;
+    color: #444444;
+    text-align: left;
+    margin-left: 300px;
+    border-bottom: 3px solid #719474;
+}
+/* 독후감 컨테이너 */
+.body{
+    margin: 30px 200px 0px 200px;
+    display: flex;
+}
+.container{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    align-content: center;
+}
+.contents .title{
+    border-bottom: 2px solid black;
+    border-style: none none dotted none;
+}
+.contents .title a:first-child{
+    font-size: 20px;
+    font-weight: bold;
+}
+.contents .title a:nth-child(2){
+    float: right;
+}
+.dsc{
+    margin-top: 50px;
+}
