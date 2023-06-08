@@ -17,6 +17,14 @@ font-weight: bold;
 text-align: center;
 padding: 14px 16px;
 text-decoration: none;
+margin: 0px 40px 0px 40px;
+font-size: 23px;
+}
+nav{
+    float: right;
+}
+ul li img{
+    margin-left: 50px;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -31,32 +39,35 @@ border-bottom: 3px solid #3C3B64;
 /* 검색바 */
 label{
     position: relative;
+    outline: none;
 }   
 input{
-    font-size: large;
+    font-size: 17px;
     box-shadow: 2px 2px 2px 2px #ced4da;
+    outline: none;
 }
 .searchBook{
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
-    width: 30%;
-    padding: 10px;
-    padding-left: 100px;
+    width: 45%;
+    padding: 15px;
+    padding-left: 110px;
 }
 .searchBook:focus{
     outline: none;
 }
 .searchBook::placeholder{
     color: lightgray;
+    outline: none;
 }
 .searchBtn{
+    position: absolute;
     background-color: #F2F2F2;
     border: none;
     outline: none;
     cursor: pointer;
-    position: absolute;
-    top: 0;
+    top: -30%;
     right: 2%;
 }
 select{
@@ -68,6 +79,7 @@ select{
     left: 2%;
     color: #444444;
     font-weight: bolder;
+    font-size: 15px;
 }
 h2{
     color: #444444;
@@ -128,4 +140,21 @@ p{
     padding: 10px 20px 10px 20px;
     margin-left: 50px;
     box-shadow: 2px 2px 2px 2px #ced4da;
+}
+/* 페이징 */
+.pageIdx{
+    margin-top: 20px;
+}
+.pageIdx a{
+    font-weight: bolder;
+    cursor: pointer;
+    margin: 0px 3px 0px 3px;
+}
+.pageIdx a:hover{
+    color: red;
+}
+
+.pageIdx .selected{
+    color: red;
+    border-bottom: 1px solid red;
 }
