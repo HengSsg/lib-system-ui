@@ -1,0 +1,130 @@
+/* 헤더 */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: #444444;
+font-weight: bold;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+border-bottom: 3px solid #3C3B64;
+}
+/* 메인 바디 */
+.body{
+    margin: 0px 200px 0px 200px;
+}
+
+/* 검색바 */
+label{
+    position: relative;
+}   
+input{
+    font-size: large;
+    box-shadow: 2px 2px 2px 2px #ced4da;
+}
+.searchBook{
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    width: 30%;
+    padding: 10px;
+    padding-left: 100px;
+}
+.searchBook:focus{
+    outline: none;
+}
+.searchBook::placeholder{
+    color: lightgray;
+}
+.searchBtn{
+    background-color: #F2F2F2;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 2%;
+}
+select{
+    position: absolute;
+    background-color: #F2F2F2;
+    border: none;
+    outline: none;
+    top: 20%;
+    left: 2%;
+    color: #444444;
+    font-weight: bolder;
+}
+h2{
+    color: #444444;
+    text-align: left;
+    margin-left: 300px;
+}
+/* 도서 목록 조회 */
+p{
+    color: #444444;
+    font-size: 20px;
+}
+.body div{
+    text-align: center;
+}
+.bookContents{
+    margin-top: 20px;
+    padding: 20px 100px 20px 100px;
+    border-bottom: 1px solid #3C3B64;
+    display: inline-flex;
+}
+.bookInfo{
+    display: flex;
+    margin-left: 80px;
+}
+.bookInfo div{
+    align-self: auto;
+    align-self: center;
+}
+.bookInfoBtn{
+    display: flex;
+}
+.rentBtn{
+    align-self: auto;
+    align-self: center;
+    background-color: #719474;
+    border: #719474;
+    outline: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 20px 10px 20px;
+    margin-left: 50px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px #ced4da;
+}
+.rentedBtn{
+    align-self: auto;
+    align-self: center;
+    background-color: #989F99;
+    border: #989F99;
+    outline: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 20px 10px 20px;
+    margin-left: 50px;
+    box-shadow: 2px 2px 2px 2px #ced4da;
+}
