@@ -1,16 +1,16 @@
 /* 헤더 */
-ul {
+.header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-li {
+.header ul li {
 float: left;
 }
 
-li a {
+.header ul li a {
 display: block;
 color: #444444;
 font-weight: bold;
@@ -20,20 +20,20 @@ text-decoration: none;
 margin: 0px 40px 0px 40px;
 font-size: 23px;
 }
-nav{
+.header ul nav{
     float: right;
 }
-ul li img{
+.header ul li img{
     margin-left: 50px;
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+.header ul li a:hover {
 border-bottom: 3px solid #3C3B64;
 }
 /* 메인 바디 */
 .body{
-    margin: 0px 200px 0px 200px;
+    margin: 30px 200px 0px 200px;
 }
 
 /* 검색바 */
