@@ -99,7 +99,7 @@
   justify-content: center;
 }
 .bodyArea {
-  width: 890px;
+  width: 780px;
 }
 .UserImg {
   float: right;
@@ -155,7 +155,6 @@ h2{
     text-align: left;
     margin-left: 300px;
 }
-
 /* 도서 목록 조회 */
 .ManageMenu {
   padding-top: 20px;
@@ -187,7 +186,7 @@ p {
   display: flex;
 }
 .DeadLinOverUserBtn {
-  background-color: #719474;
+  background-color: #989f99;
   border: #719474;
   outline: none;
   border-radius: 8px;
@@ -200,7 +199,7 @@ p {
   box-shadow: 2px 2px 2px 2px #ced4da;
 }
 .RentUserListBtn {
-  background-color: #989f99;
+  background-color: #719474;
   border: #989f99;
   outline: none;
   border-radius: 8px;
