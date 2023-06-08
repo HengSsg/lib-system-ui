@@ -28,15 +28,18 @@ li a {
   width: 900px;
 }
 .banner {
-  color: white;
-  background-color: #89af8c;
+  color: gray;
   width: 199px;
   height: 48px;
-  border: 1px solid #909090;
-  border-radius: 20px;
   text-align: center;
   line-height: 50px;
-  font-size: 20px;
+  font-size: 28px;
+  border-bottom: solid;
+  border-color: #89af8c;
+  border-width: 3px;
+  height: 38px;
+  width: 170px;
+  margin-bottom: 4px;
 }
 #table1 {
   display: flex;
@@ -80,13 +83,22 @@ li a {
 .header1-3 {
   height: 37px;
   flex-grow: 1;
-  color: #9a9999;
-  background-color: #f4f4f4;
+  border-left: solid gray;
+  border-width: 1.2px;
   text-align: center;
+  line-height: 37px;
+}
+.button1 {
+  width: 147px;
+  height: 37px;
+  color: white;
+  background-color: #89af8c;
   line-height: 35px;
   border: solid white;
   border-radius: 20px;
   cursor: pointer;
+  float: right;
+  margin-right: 25px;
 }
 .solidLine {
   border-top: solid black;
@@ -112,4 +124,22 @@ table tr td:nth-child(2) {
   text-align: left; /* 가로 정렬을 중앙으로 설정 */
   vertical-align: middle; /* 세로 정렬을 중앙으로 설정 */
   height: 50px; /* 각 셀의 높이 설정 */
+}
+/* 페이징 */
+.pageIdx {
+  margin-top: 20px;
+  margin-left: 400px;
+}
+.pageIdx a {
+  font-weight: bolder;
+  cursor: pointer;
+  margin: 0px 3px 0px 3px;
+}
+.pageIdx a:hover {
+  color: red;
+}
+
+.pageIdx .selected {
+  color: red;
+  border-bottom: 1px solid red;
 }
