@@ -1,43 +1,34 @@
 /* 헤더 */
-.nav-wrapper {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.leftnav {
-    display: flex;
-    justify-content: space-around;
-}
-.rightnav {
-    display: flex;
-    align-items: flex-end;
-}
-
-ul {
+.header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    display: flex;
 }
 
-li {
-width: 180px;
+.header ul li {
+float: left;
 }
 
-li a {
+.header ul li a {
 display: block;
 color: #444444;
-font-size: 21px;
 font-weight: bold;
 text-align: center;
 padding: 14px 16px;
 text-decoration: none;
-margin-top: 15px;
+margin: 0px 40px 0px 40px;
+font-size: 23px;
+}
+.header ul nav{
+    float: right;
+}
+.header ul li img{
+    margin-left: 50px;
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+.header ul li a:hover {
 border-bottom: 3px solid #3C3B64;
 }
 /* 메인 바디 */
