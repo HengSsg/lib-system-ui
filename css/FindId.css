@@ -1,0 +1,62 @@
+* {
+    background-color: #e7f5ff;
+}
+main {
+    position: relative;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 60px 0 70px;
+}
+
+.form-wrapper {
+    padding: 75px 10px;
+}
+.form-wrapper h3 {
+    text-align: center;
+    color: #339af0;
+}
+
+.userphone{
+    display: block;
+    position: relative;
+    width: 90%;
+    height: 11px;
+    padding: 14px 18px;
+    overflow: hidden;
+    border: 1px solid rgb(214, 222, 235);
+    border-style: solid;
+    background: white;
+    color: rgb(49, 53, 56);
+    margin-bottom: -1px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+.userphone:hover {
+    border: 1px solid #74c0fc;
+}
+
+.findIdbtn {
+    display: block;
+    width: 344px;
+    border: none;
+    margin-top: 15px;
+    height: 45px;
+    background-color: #339af0;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+.atag {
+    text-align: center;
+}
+
+.atag a {
+    margin-top: 6px;
+    text-decoration: none;
+    color: #808991;
+    font-size: 13px;
+    font-weight: bold;
+}
