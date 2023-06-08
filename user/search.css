@@ -62,3 +62,7 @@ select {
   border-top: 1px solid lightgray;
   display: flex;
 }
+
+.search-block {
+  text-align: center;
+}
