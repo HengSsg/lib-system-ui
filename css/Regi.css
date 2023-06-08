@@ -8,15 +8,18 @@ margin: 0 auto;
 padding: 60px 0 70px;
 }
 
+form {
+    margin-top: 20px;
+}
+
 .form-wrapper {
-    padding: 75px 10px;
+    padding: 100px 10px;
 }
 .item-wrapper {
     margin: 0 auto;
     text-align: center;
 }
-
-.userId, .userpwd{
+.userId, .userpwd, .username, .userphone, .useraddr, .usermail{
     display: block;
     position: relative;
     width: 90%;
@@ -36,12 +39,24 @@ padding: 60px 0 70px;
 .userpwd:hover {
     border-bottom: 2px solid #719474;
 }
+.username:hover {
+    border-bottom: 2px solid #719474;
+}
+.userphone:hover {
+    border-bottom: 2px solid #719474;
+}
+.useraddr:hover {
+    border-bottom: 2px solid #719474;
+}
+.usermail:hover {
+    border-bottom: 2px solid #719474;
+}
 
-.loginbtn {
+.regibtn {
     display: block;
     width: 344px;
     border: none;
-    margin-top: 15px;
+    margin-top: 20px;
     height: 45px;
     background-color: #719474;
     border-radius: 4px;
@@ -49,17 +64,4 @@ padding: 60px 0 70px;
     font-weight: 700;
     color: white;
     cursor: pointer;
-}
-
-.atag {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 6px;
-}
-
-.atag a {
-    text-decoration: none;
-    color: #808991;
-    font-size: 13px;
-    font-weight: bold;
 }
