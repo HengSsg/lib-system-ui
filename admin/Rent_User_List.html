@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rent_User_List</title>
+    <link rel="stylesheet" type="text/css" href="Rent_LUser_Style.css" />
+</head>
+<body>
+<!-- 헤더 -->
+<div class="header">
+    <ul>
+        <li><img src="../image/mainlogo.png" style="width: 80px" /></li>
+        <li><a href="default.asp">도서반납</a></li>
+        <li><a href="news.asp">회원관리</a></li>
+        <nav class="UserImg">
+            <li><img src="../image/userImg.svg" style="width: 50px" /></li>
+        </nav>
+    </ul>
+</div>
+<!-- 바디 -->
+<div class="body">
+    <div class="bodyArea">
+        <div>
+            <label>
+                <select>
+                    <option>ID</option>
+                    <option>도서번호</option>
+                </select>
+                <input type="search" name="searchBook" class="searchBook" placeholder="검색어를 입력하세요."/>
+                <button name="searchBtn" class="searchBtn">
+                    <img src="../image/search_white_24dp.svg" alt="검색">
+                </button>
+            </label>
+        </div>
+        <div>
+            <nav class="ManageMenu">
+                <button
+                        type="button"
+                        name="DeadLinOverUserBtn"
+                        class="DeadLinOverUserBtn"
+                >
+                    연체 회원 목록
+                </button>
+                <button
+                        type="button"
+                        name="RentUserListBtn"
+                        class="RentUserListBtn"
+                >
+                    대출 이용자 목록
+                </button>
+            </nav>
+        </div>
+        <div class="ManageList">
+            <ul class="List">
+                <li class="fl tc w100 title t_line lt_line">ID</li>
+                <li class="fl tc w100 title t_line lt_line">이름</li>
+                <li class="fl tc w500 title t_line lt_line">책 제목</li>
+                <li class="fl tc w130 title t_line lt_line">반납 기한</li>
+                <li class="fl tc w130 title  lt_line">연체 YN</li>
+
+            </ul>
+            <ul class="List">
+                <li class="fl tc w100 list lt_line2">test1</li>
+                <li class="fl tc w100 list lt_line2">박준호</li>
+                <li class="fl tc w500 list lt_line2">우리들의 일그러진 영웅</li>
+                <li class="fl tc w130 list lt_line2">2023-06-02</li>
+                <li class="fl tc w130 list lt_line2">Y</li>
+
+            </ul>
+            <ul class="List">
+                <li class="fl tc w100 list lt_line2">test1</li>
+                <li class="fl tc w100 list lt_line2">박준호</li>
+                <li class="fl tc w500 list lt_line2">우리들의 일그러진 영웅</li>
+                <li class="fl tc w130 list lt_line2">2023-06-02</li>
+                <li class="fl tc w130 list lt_line2">N</li>
+
+            </ul>
+            <ul class="List">
+                <li class="fl tc w100 list lt_line2">test1</li>
+                <li class="fl tc w100 list lt_line2">박준호</li>
+                <li class="fl tc w500 list lt_line2">우리들의 일그러진 영웅</li>
+                <li class="fl tc w130 list lt_line2">2023-06-02</li>
+                <li class="fl tc w130 list lt_line2">N</li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

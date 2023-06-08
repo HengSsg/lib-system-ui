@@ -1,0 +1,145 @@
+/* 헤더 */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #444444;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* 커뮤니티 바디 */
+#community {
+  display: flex;
+  justify-content: center;
+}
+#cBody {
+  width: 900px;
+}
+.banner {
+  color: gray;
+  width: 199px;
+  height: 48px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 28px;
+  border-bottom: solid;
+  border-color: #89af8c;
+  border-width: 3px;
+  height: 38px;
+  width: 170px;
+  margin-bottom: 4px;
+}
+#table1 {
+  display: flex;
+  justify-content: center;
+}
+.table1-1 {
+  margin-top: 33px;
+  width: 850px;
+}
+
+#table2 {
+  display: flex;
+  justify-content: center;
+}
+.table2-1 {
+  margin-top: 33px;
+  width: 850px;
+}
+
+.header1 {
+  display: flex;
+  height: 40px;
+}
+
+.header1-1 {
+  flex-basis: 108px;
+  border: none;
+  border-right: solid gray;
+  border-width: 1.2px;
+  height: 37px;
+  text-align: center;
+  line-height: 37px;
+}
+
+.header1-2 {
+  height: 37px;
+  flex-basis: 585px;
+  text-align: center;
+  line-height: 37px;
+}
+.header1-3 {
+  height: 37px;
+  flex-grow: 1;
+  border-left: solid gray;
+  border-width: 1.2px;
+  text-align: center;
+  line-height: 37px;
+}
+.button1 {
+  width: 147px;
+  height: 37px;
+  color: white;
+  background-color: #89af8c;
+  line-height: 35px;
+  border: solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  float: right;
+  margin-right: 25px;
+}
+.solidLine {
+  border-top: solid black;
+  border-width: 1.2px;
+}
+.group1 {
+  width: 109px;
+  text-align: center;
+}
+.group2 {
+  width: 585px;
+}
+.group3 {
+  width: 156px;
+}
+td {
+  text-align: center; /* 가로 정렬을 중앙으로 설정 */
+  vertical-align: middle; /* 세로 정렬을 중앙으로 설정 */
+  height: 50px; /* 각 셀의 높이 설정 */
+}
+table tr td:nth-child(2) {
+  padding-left: 20px;
+  text-align: left; /* 가로 정렬을 중앙으로 설정 */
+  vertical-align: middle; /* 세로 정렬을 중앙으로 설정 */
+  height: 50px; /* 각 셀의 높이 설정 */
+}
+/* 페이징 */
+.pageIdx {
+  margin-top: 20px;
+  margin-left: 400px;
+}
+.pageIdx a {
+  font-weight: bolder;
+  cursor: pointer;
+  margin: 0px 3px 0px 3px;
+}
+.pageIdx a:hover {
+  color: red;
+}
+
+.pageIdx .selected {
+  color: red;
+  border-bottom: 1px solid red;
+}
