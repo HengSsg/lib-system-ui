@@ -1,0 +1,176 @@
+/* 헤더 */
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.header {
+  border-bottom: 1px solid #3c3b64;
+}
+.header ul li {
+  float: left;
+}
+
+.header ul li a {
+  display: block;
+  color: #444444;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: 0px 40px 0px 40px;
+  font-size: 23px;
+}
+.header ul nav {
+  float: right;
+}
+.header ul li img {
+  margin-left: 50px;
+}
+
+/* Change the link color to #111 (black) on hover */
+.header ul li a:hover {
+  border-bottom: 3px solid #3c3b64;
+}
+/*바디 시작*/
+#set {
+  display: flex;
+  justify-content: center;
+}
+/*테이블*/
+#UserTable {
+  width: 500px;
+  margin-top: 20px;
+  border: solid black;
+}
+#TName {
+}
+#TID {
+}
+#TState {
+}
+#Tnum {
+}
+/* 검색바 */
+
+.searchAndTable {
+  display: flex;
+  justify-content: center;
+}
+.searchdiv {
+  width: 450px;
+  margin-top: 20px;
+}
+label {
+  position: relative;
+  outline: none;
+}
+input {
+  font-size: 17px;
+  box-shadow: 2px 2px 2px 2px #ced4da;
+  outline: none;
+  line-height: 20px;
+}
+.searchBook {
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+
+  padding: 18px;
+  padding-left: 150px;
+}
+.searchBook:focus {
+  outline: none;
+}
+.searchBook::placeholder {
+  color: lightgray;
+  outline: none;
+}
+.searchBtn {
+  position: absolute;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  top: -25%;
+  right: 2%;
+}
+select {
+  position: absolute;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  top: 20%;
+  left: 2%;
+  color: #444444;
+  font-weight: bolder;
+  font-size: 15px;
+}
+h2 {
+  color: #444444;
+  text-align: left;
+  margin-left: 300px;
+}
+/* 도서 목록 조회 */
+p {
+  color: #444444;
+  font-size: 20px;
+  text-align: left;
+}
+.body div {
+  text-align: center;
+}
+.ManageList {
+  margin-top: 100px;
+}
+.RbookContents {
+  margin-top: 20px;
+  padding: 20px 100px 20px 100px;
+  border-bottom: 1px solid lightgray;
+  display: inline-flex;
+}
+.RbookInfo {
+  display: flex;
+  margin-left: 80px;
+}
+.RbookInfo div {
+  align-self: auto;
+  align-self: center;
+}
+.RbookInfoBtn {
+  display: flex;
+}
+.rentBtn {
+  align-self: auto;
+  align-self: center;
+  background-color: #719474;
+  border: #719474;
+  outline: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 20px 10px 20px;
+  margin-left: 50px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 2px #ced4da;
+}
+.rentedBtn {
+  align-self: auto;
+  align-self: center;
+  background-color: #989f99;
+  border: #989f99;
+  outline: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 20px 10px 20px;
+  margin-left: 50px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 2px #ced4da;
+}
+.tableCenter {
+  border-right: solid black;
+}
