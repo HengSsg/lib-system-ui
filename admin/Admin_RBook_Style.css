@@ -43,7 +43,6 @@
 #UserTable{
     width: 500px;
     margin-top: 20px;
-    border: solid black;
     border-collapse: collapse;
     border-radius: 10px;
     border-style: hidden;
