@@ -36,36 +36,30 @@
 /*바디 시작*/
 #set{
     display: flex;
-    flex-direction: row;
-    text-align: center;
+    /*flex-direction: row;*/
+    justify-content: center;
 }
 /*테이블*/
 #UserTable{
-    width: 100%;
-    margin-right: 50px;
+    width: 500px;
     margin-top: 20px;
+    border: solid black;
     border-collapse: collapse;
     border-radius: 10px;
     border-style: hidden;
     box-shadow: 0 0 0 1px #000;
 }
-#TName{
-    border: solid 1px black;
-}
-#TID{
-    border: solid 1px black;
-}
-#TState{
-    border: solid 1px black;
-}
-#Tnum{
-    border: solid 1px black;
+.tableCenter {
+  border-right: solid black;
 }
 /* 검색바 */
-.searchdiv{
-    width: 100%;
-    margin-top: 20px;
-    margin-left: 300px;
+.searchAndTable {
+  display: flex;
+  justify-content: center;
+}
+.searchdiv {
+  width: 450px;
+  margin-top: 20px;
 }
 label{
     position: relative;
@@ -81,7 +75,6 @@ input{
     border-radius: 25px;
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
-    width: 40%;
     padding: 15px;
     padding-left: 110px;
 }
