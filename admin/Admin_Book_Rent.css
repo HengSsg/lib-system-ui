@@ -119,7 +119,7 @@ p {
   text-align: left;
 }
 .body div {
-  text-align: center;
+  /* text-align: center; */
 }
 .ManageList {
   margin-top: 100px;
@@ -195,4 +195,14 @@ p {
   font-weight: 700;
   color: white;
   cursor: pointer;
+}
+
+/* 책 리스트 */
+#lists {
+  display: flex;
+  justify-content: center;
+}
+
+#list {
+  width: 940px;
 }

@@ -20,43 +20,44 @@
         </nav>
       </ul>
     </div>
-    <div class="body">
-      <div id="set">
-        <div class="searchAndTable">
-          <div class="searchdiv">
-            <label>
-              <select>
-                <option>회원ID</option>
-              </select>
-              <input
-                type="search"
-                name="searchBook"
-                class="searchBook"
-                placeholder="회원 번호 입력"
-              />
-              <button name="searchBtn" class="searchBtn">
-                <img src="../image/search_white_24dp.svg" alt="검색" />
-              </button>
-            </label>
-          </div>
-          <div id="UserTable">
-            <table style="width: 500px">
-              <tr>
-                <th style="width: 25%">ID:</th>
-                <td class="tableCenter" style="width: 25%">98765432</td>
-                <th style="width: 25%">이름:</th>
-                <td style="width: 25%">박준호</td>
-              </tr>
-              <tr>
-                <th>대출 중:</th>
-                <td class="tableCenter">4권</td>
-                <th>상태:</th>
-                <td>대출 불가</td>
-              </tr>
-            </table>
-          </div>
+
+    <div id="set">
+      <div class="searchAndTable">
+        <div class="searchdiv">
+          <label>
+            <select>
+              <option>회원ID</option>
+            </select>
+            <input
+              type="search"
+              name="searchBook"
+              class="searchBook"
+              placeholder="회원 번호 입력"
+            />
+            <button name="searchBtn" class="searchBtn">
+              <img src="../image/search_white_24dp.svg" alt="검색" />
+            </button>
+          </label>
+        </div>
+        <div id="UserTable">
+          <table style="width: 500px">
+            <tr>
+              <th style="width: 25%">ID:</th>
+              <td class="tableCenter" style="width: 25%">98765432</td>
+              <th style="width: 25%">이름:</th>
+              <td style="width: 25%">박준호</td>
+            </tr>
+            <tr>
+              <th>대출 중:</th>
+              <td class="tableCenter">4권</td>
+              <th>상태:</th>
+              <td>대출 불가</td>
+            </tr>
+          </table>
         </div>
       </div>
+    </div>
+    <div id="lists">
       <div id="list">
         <div class="RbookContents">
           <div>
@@ -121,9 +122,9 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="Rentdiv">
-        <button type="submit" class="ReturnBtn">대출</button>
+        <center>
+          <button type="submit" class="ReturnBtn">대출</button>
+        </center>
       </div>
     </div>
   </body>
