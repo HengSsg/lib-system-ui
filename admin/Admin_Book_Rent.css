@@ -132,7 +132,7 @@ p {
 }
 .RbookInfo {
   display: flex;
-  margin-left: 80px;
+  width: 350px;
 }
 .RbookInfo div {
   align-self: auto;
@@ -173,4 +173,26 @@ p {
 }
 .tableCenter {
   border-right: solid black;
+}
+
+.Imageclass {
+  display: flex;
+  align: center;
+  width: 120px;
+  height: 150px;
+  margin-right: 30px;
+}
+
+.ReturnBtn {
+  align-self: center;
+  width: 70px;
+  border: none;
+  margin-top: 15px;
+  height: 45px;
+  background-color: #719474;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
 }
