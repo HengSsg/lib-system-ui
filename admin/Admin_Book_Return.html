@@ -14,9 +14,9 @@
         <div class="header">
             <ul>
                 <li><img src="../image/mainlogo.png" style="width: 80px;"/></li>
-                <li><a href="#">대출</a></li>
-                <li><a href="Admin_Book_Return.html">반납</a></li>
-                <li><a href="Admin_User_Manager.html">회원관리</a></li>
+                <li><a href="#">도서 대출</a></li>
+                <li><a href="Admin_Book_Return.html">도서 반납</a></li>
+                <li><a href="Admin_User_Manager.html">회원 관리</a></li>
                 <nav><li><img src="../image/userImg.svg" style="width: 50px;"/></li></nav>
             </ul>
         </div>
@@ -33,69 +33,93 @@
                             <img src="../image/search_white_24dp.svg" alt="검색">
                         </button>
                     </Label>
+                    <div>
+                        <table id="UserTable" >
+                            <tr>
+                                <td id="TName">이름: 박준호</td>
+                                <td id="TID">ID: test1</td>
+                            </tr>
+                            <tr>
+                                <td id="TState">상태: 대출가능</td>
+                                <td id="Tnum">현재 대출: 3</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <div id="UserTable">
-                    <table>
-                        <tr>
-                            <td id="TName">이름: 박준호</td>
-                            <td id="TID">ID: test1</td>
-                        </tr>
-                        <tr>
-                            <td id="TState">상태: 대출가능</td>
-                            <td id="Tnum">현재 대출: 3</td>
-                        </tr>
-                    </table>
-                </div>
+
             </div>
             <div>
                 <div class="RbookContents">
                     <div>
-                        <img src="../image/img01.jpg" />
+                        <label><input type="checkbox" name="color" value="blue"></label>
                     </div>
-                    <div class="RbookInfo">
-                        <div>
-                            <p>도서명: 성낙현의 JSP 프로그래밍</p>
-                            <p>유저ID: test1</p>
-                            <p>도서번호: 20163251</p>
-                        </div>
-                    </div>
-                    <div class="RbookInfoBtn">
-                        <button type="button" name="rentBtn" class="rentBtn">반납</button>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="RbookContents">
                     <div>
-                        <img src="../image/img02.jpg" />
+                        <img src="../image/img01.jpg" class="Imageclass"/>
                     </div>
                     <div class="RbookInfo">
                         <div>
                             <p>도서명: 성낙현의 JSP 프로그래밍</p>
-                            <p>유저ID: test2</p>
-                            <p>도서번호: 20163272</p>
+                            <p>저자명: 성낙현</p>
+                            <p>출판사: 에듀윌</p>
                         </div>
                     </div>
-                    <div class="RbookInfoBtn">
-                        <button type="button" name="rentBtn" class="rentedBtn">반납완료</button>
+                    <div class="RbookInfo2">
+                        <div>
+                            <p>대출 일자: 2023-06-01</p>
+                            <p>반납예정일: 2023-06-07</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div>
                 <div class="RbookContents">
                     <div>
-                        <img src="../image/img03.jpg" />
+                        <label><input type="checkbox" name="color" value="blue"></label>
+                    </div>
+                    <div>
+                        <img src="../image/img02.jpg" class="Imageclass"/>
                     </div>
                     <div class="RbookInfo">
                         <div>
                             <p>도서명: 성낙현의 JSP 프로그래밍</p>
-                            <p>UserID: 한빛출판사</p>
-                            <p>BookNo: 내가 지음</p>
+                            <p>저자명: 성낙현</p>
+                            <p>출판사: 에듀윌</p>
                         </div>
                     </div>
-                    <div class="RbookInfoBtn">
-                        <button type="button" name="rentBtn" class="rentBtn">반납</button>
+                    <div class="RbookInfo2">
+                        <div>
+                            <p>대출 일자: 2023-06-01</p>
+                            <p>반납예정일: 2023-06-07</p>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <div>
+                <div class="RbookContents">
+                    <div>
+                        <label><input type="checkbox" name="color" value="blue"></label>
+                    </div>
+                    <div>
+                        <img src="../image/img03.jpg" class="Imageclass"/>
+                    </div>
+                    <div class="RbookInfo">
+                        <div>
+                            <p>도서명: 성낙현의 JSP 프로그래밍</p>
+                            <p>저자명: 성낙현</p>
+                            <p>출판사: 에듀윌</p>
+                        </div>
+                    </div>
+                    <div class="RbookInfo2">
+                        <div>
+                            <p>대출 일자: 2023-06-01</p>
+                            <p>반납예정일: 2023-06-07</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="Rentdiv">
+                    <button type="submit" class="ReturnBtn">반납</button>
                 </div>
             </div>
         </div>

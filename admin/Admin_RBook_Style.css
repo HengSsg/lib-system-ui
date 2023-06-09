@@ -41,13 +41,16 @@
 }
 /*테이블*/
 #UserTable{
-    width: 70%;
+    width: 100%;
     margin-right: 50px;
     margin-top: 20px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px #000;
 }
 #TName{
     border: solid 1px black;
-
 }
 #TID{
     border: solid 1px black;
@@ -60,9 +63,9 @@
 }
 /* 검색바 */
 .searchdiv{
-    width: 30%;
+    width: 100%;
     margin-top: 20px;
-    margin-left: 100px;
+    margin-left: 300px;
 }
 label{
     position: relative;
@@ -78,7 +81,7 @@ input{
     border-radius: 25px;
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
-    width: 100%;
+    width: 40%;
     padding: 15px;
     padding-left: 110px;
 }
@@ -117,7 +120,7 @@ h2{
 /* 도서 목록 조회 */
 p{
     color: #444444;
-    font-size: 20px;
+    font-size: 15px;
     text-align: left;
 }
 .body div{
@@ -125,6 +128,13 @@ p{
 }
 .ManageList{
     margin-top: 100px;
+}
+.Imageclass{
+    display: flex;
+    align: center;
+    width: 120px;
+    height: 150px;
+    margin-right: 30px;
 }
 .RbookContents{
     margin-top: 20px;
@@ -134,11 +144,16 @@ p{
 }
 .RbookInfo{
     display: flex;
-    margin-left: 80px;
+    width: 350px;
+
 }
-.RbookInfo div{
+.RbookInfo RbookInfo2 div{
     align-self: auto;
     align-self: center;
+}
+.RbookInfo RbookInfo2{
+    display: flex;
+
 }
 .RbookInfoBtn{
     display: flex;
@@ -173,4 +188,22 @@ p{
     cursor: pointer;
     box-shadow: 2px 2px 2px 2px #ced4da;
 }
+.ReturnBtn{
+    align-self: center;
+    width: 70px;
+    border: none;
+    margin-top: 15px;
+    height: 45px;
+    background-color: #719474;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+.Rentdiv{
+    padding: 20px 100px 20px 100px;
+    display: inline-flex;
+}
+
 
