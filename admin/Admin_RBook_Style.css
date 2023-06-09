@@ -5,9 +5,7 @@
   padding: 0;
   overflow: hidden;
 }
-.header{
-    border-bottom: 1px solid #3c3b64;
-}
+
 .header ul li {
   float: left;
 }
@@ -30,8 +28,8 @@
 }
 
 /* Change the link color to #111 (black) on hover */
-.header ul li a:hover {
-  border-bottom: 3px solid #3c3b64;
+.select:hover{
+    border-bottom: 3px solid #3c3b64;
 }
 /*바디 시작*/
 #set{
