@@ -1,38 +1,37 @@
 /* 헤더 */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-li {
-float: left;
+.header ul li {
+  float: left;
 }
 
-li a {
-display: block;
-color: #444444;
-font-weight: bold;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
+.header ul li a {
+  display: block;
+  color: #444444;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: 0px 40px 0px 40px;
+  font-size: 23px;
+}
+.header ul nav {
+  float: right;
+}
+.header ul li img {
+  margin-left: 50px;
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
-border-bottom: 3px solid #3C3B64;
+.header ul li a:hover {
+  border-bottom: 3px solid #3c3b64;
 }
-.UserConnection{
-    text-align: right;
-}
-/* 메인 바디 */
-.body{
-    margin: 0px 200px 0px 200px;
-}
-nav {
-  float: right;
-}
+
 /* 검색바 */
 label{
     position: relative;
