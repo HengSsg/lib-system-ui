@@ -13,26 +13,40 @@
     <body>
         <div class="header">
             <ul>
-              <li><img src="../image/mainlogo.png" style="width: 80px;"/></li>
-              <li><a href="Admin_Book_Return.html">도서반납</a></li>
-              <li><a href="Admin_User_Manager.html">회원관리</a></li>
+                <li><img src="../image/mainlogo.png" style="width: 80px;"/></li>
+                <li><a href="#">대출</a></li>
+                <li><a href="Admin_Book_Return.html">반납</a></li>
+                <li><a href="Admin_User_Manager.html">회원관리</a></li>
                 <nav><li><img src="../image/userImg.svg" style="width: 50px;"/></li></nav>
             </ul>
         </div>
         <div class="body">
-            <div>
-                <Label>
-                    <select>
-                        <option>ID</option>
-                        <option>도서번호</option>
-                    </select>
-                    <input type="search" name="searchBook" class="RsearchBook" placeholder="검색어를 입력하세요."/>
-                    <button name="searchBtn" class="RsearchBtn">
-                      <img src="../image/search_white_24dp.svg" alt="검색">
-                    </button>
-                </Label>
+            <div id="set">
+                <div class="searchdiv">
+                    <Label>
+                        <select>
+                            <option>회원ID</option>
+                            <option>도서번호</option>
+                        </select>
+                        <input type="search" name="searchBook" class="searchBook" placeholder="회원 번호 입력"/>
+                        <button name="searchBtn" class="searchBtn">
+                            <img src="../image/search_white_24dp.svg" alt="검색">
+                        </button>
+                    </Label>
+                </div>
+                <div id="UserTable">
+                    <table>
+                        <tr>
+                            <td id="TName">이름: 박준호</td>
+                            <td id="TID">ID: test1</td>
+                        </tr>
+                        <tr>
+                            <td id="TState">상태: 대출가능</td>
+                            <td id="Tnum">현재 대출: 3</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-
             <div>
                 <div class="RbookContents">
                     <div>
