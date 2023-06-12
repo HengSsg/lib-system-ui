@@ -8,12 +8,12 @@
       {
           "id":"test1", 
           "password":"1234",
-          "authYn": 0
+          "authYn": 1
       }, 
       {
           "id":"test2", 
           "password":"1234",
-          "authYn": 0
+          "authYn": 1
       }
   ]
 }
