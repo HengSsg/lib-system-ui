@@ -8,7 +8,12 @@
     <link rel="stylesheet" type="text/css" href="Admin_Book_Rent.css" />
     <link rel="icon" href="../image/favicon-16x16.png" />
   </head>
-  <header></header>
+  <header>
+    <script>
+      const testData = fetch("../data/return.json");
+      console.log(testData);
+    </script>
+  </header>
   <body>
     <div class="header">
       <ul>
@@ -48,6 +53,7 @@
             </label>
           </div>
           <div id="UserTable">
+
             <table style="width: 500px">
               <tr>
                 <th style="width: 25%">ID:</th>
