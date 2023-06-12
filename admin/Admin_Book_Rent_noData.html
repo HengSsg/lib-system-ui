@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>도서 대출</title>
+    <link rel="stylesheet" type="text/css" href="Admin_Book_Rent.css" />
+    <link rel="icon" href="../image/favicon-16x16.png" />
+  </head>
+  <header></header>
+  <body>
+    <div class="header">
+      <ul>
+        <li>
+          <a href="adMain.html"
+            ><img src="../image/mainlogo.png" style="width: 80px"
+          /></a>
+        </li>
+        <li>
+          <a class="select" href="Admin_Book_Rent_noData.html">도서 대출</a>
+        </li>
+        <li>
+          <a class="select" href="Admin_Book_Return_noData.html">도서 반납</a>
+        </li>
+        <nav>
+          <li><img src="../image/userImg.svg" style="width: 50px" /></li>
+        </nav>
+      </ul>
+    </div>
+    <div class="body">
+      <div id="set">
+        <div class="searchAndTable">
+          <div class="searchdiv">
+            <label>
+              <select>
+                <option>회원ID</option>
+              </select>
+              <input
+                type="search"
+                name="searchBook"
+                class="searchBook"
+                placeholder="회원 번호 입력"
+              />
+              <button name="searchBtn" class="searchBtn">
+                <a href="./Admin_Book_Rent.html">
+                  <img src="../image/search_white_24dp.svg" alt="검색" />
+                </a>
+              </button>
+            </label>
+          </div>
+          <div id="UserTable">
+            <table style="width: 500px">
+              <tr>
+                <th style="width: 25%">ID:</th>
+                <td class="tableCenter" style="width: 25%"></td>
+                <th style="width: 25%">이름:</th>
+                <td style="width: 25%"></td>
+              </tr>
+              <tr>
+                <th>대출 중:</th>
+                <td class="tableCenter"></td>
+                <th>상태:</th>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
