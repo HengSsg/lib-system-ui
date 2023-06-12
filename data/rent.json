@@ -10,14 +10,14 @@
       "name": "성낙현의 JSP 프로그래밍",
       "author": "성낙현",
       "publisher": "에듀윌",
-      "rentDate": "2023-06-01",
-      "returnDate": "2023-06-07",
+      "rentDate": "2023-03-21",
+      "returnDate": "2023-05-07",
       "imageUrl": "http:www.image.com"
     },
     {
       "name": "박형석의 JSP 프로그래밍",
       "author": "박형석",
-      "publisher": "에듀윌",
+      "publisher": "어른듀윌",
       "rentDate": "2023-06-01",
       "returnDate": "2023-06-07",
       "imageUrl": "http:www.image.com"
@@ -42,8 +42,8 @@
       "name": "장은주의 JSP 프로그래밍",
       "author": "장은주",
       "publisher": "에듀윌",
-      "rentDate": "2023-06-01",
-      "returnDate": "2023-06-07",
+      "rentDate": "2023-06-05",
+      "returnDate": "2023-08-07",
       "imageUrl": "http:www.image.com"
     }
   ]

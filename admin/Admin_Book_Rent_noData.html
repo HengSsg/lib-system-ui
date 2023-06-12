@@ -42,8 +42,8 @@
                 class="searchBook"
                 placeholder="회원 번호 입력"
               />
-              <button name="searchBtn" class="searchBtn">
-                <a href="./Admin_Book_Rent.html">
+              <button id="searchBtn">
+                <!-- <a href="./Admin_Book_Rent.html"> -->
                   <img src="../image/search_white_24dp.svg" alt="검색" />
                 </a>
               </button>
@@ -53,20 +53,29 @@
             <table style="width: 500px">
               <tr>
                 <th style="width: 25%">ID:</th>
-                <td class="tableCenter" style="width: 25%"></td>
+                <td id="ID" class="tableCenter" style="width: 25%"></td>
                 <th style="width: 25%">이름:</th>
-                <td style="width: 25%"></td>
+                <td id="name" style="width: 25%"></td>
               </tr>
               <tr>
                 <th>대출 중:</th>
-                <td class="tableCenter"></td>
+                <td id="rentNum" class="tableCenter"></td>
                 <th>상태:</th>
-                <td></td>
+                <td id="status"></td>
               </tr>
             </table>
           </div>
+          
         </div>
+        
+      </div>
+      <div id="bookData">
+        <!-- 대출 데이터 넣는 곳 -->
+
+        
       </div>
     </div>
+    
+    <script src="rent.js"></script>
   </body>
 </html>
