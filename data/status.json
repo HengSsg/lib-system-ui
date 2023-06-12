@@ -1,3 +1,8 @@
-{
-  "ready": 1000
+{ 
+    "now":837,
+    "ready":1000,
+    "rent":98,
+    "reserve":40,
+    "return":48,
+    "notreturn":17
 }
