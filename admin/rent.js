@@ -34,9 +34,9 @@ document.getElementById("searchBtn").addEventListener("click", function () {
         var p1 = document.createElement("p");
         p1.textContent = "도서명: " + data.bookData[i].name;
         var p2 = document.createElement("p");
-        p2.textContent = "저자명: 성낙현";
+        p2.textContent = `저자명: ${data.bookData[i].author}`;
         var p3 = document.createElement("p");
-        p3.textContent = "출판사: 에듀윌";
+        p3.textContent = `출판사: ${data.bookData[i].publisher}`;
         divInfoInner.appendChild(p1);
         divInfoInner.appendChild(p2);
         divInfoInner.appendChild(p3);
@@ -46,9 +46,9 @@ document.getElementById("searchBtn").addEventListener("click", function () {
         divRbookInfo2.classList.add("RbookInfo2");
         var divInfo2Inner = document.createElement("div");
         var p4 = document.createElement("p");
-        p4.textContent = "대출 일자: 2023-06-01";
+        p4.textContent = `대출 일자: ${data.bookData[i % 10].rentDate}`;
         var p5 = document.createElement("p");
-        p5.textContent = "반납예정일: 2023-06-07";
+        p5.textContent = `반납예정일: ${data.bookData[i % 10].rentDate}`;
         divInfo2Inner.appendChild(p4);
         divInfo2Inner.appendChild(p5);
         divRbookInfo2.appendChild(divInfo2Inner);
