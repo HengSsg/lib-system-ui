@@ -1,0 +1,39 @@
+/*헤더 컨테이너*/
+.Header_Container li{
+    float: left;
+}
+.Header_Container{
+    width: 100%;
+    background-color: skyblue;
+}
+.Header_Container ul{
+    list-style: none;/*리스트 형태 (글머리 기호를 없애줌)*/
+    overflow: hidden;/*overflow hidden을 해야지 div 색을 볼 수 있음*/
+    margin: 0;
+    padding: 0;
+}
+
+.Header_Container ul li {
+  float: left;
+}
+.Header_Container ul li a{
+    display: block;
+    color: #444444;
+    font-weight: bold;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0px 40px 0px 40px;
+    font-size: 23px;
+}
+.Header_Container img{
+    margin-left:50px;
+}
+
+.ContainerMenu a:hover{
+    border-bottom: 3px solid #000
+}
+
+#test{
+    width: 40%;
+    object-fit: cover;
+}

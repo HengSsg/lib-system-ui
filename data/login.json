@@ -1,14 +1,19 @@
-[
-  {
-    "username": "HengSsg",
-    "password": "abc1234"
-  },
-  {
-    "username": "HengSsg",
-    "password": "abc1234"
-  },
-  {
-    "username": "HengSsg",
-    "password": "abc1234"
-  }
-]
+{
+  "user":[
+      {
+          "id":"admin", 
+          "password":"1234",
+          "authYn": 1
+      }, 
+      {
+          "id":"test1", 
+          "password":"1234",
+          "authYn": 1
+      }, 
+      {
+          "id":"test2", 
+          "password":"1234",
+          "authYn": 1
+      }
+  ]
+}
