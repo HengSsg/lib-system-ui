@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 완료</title>
+    <link rel="stylesheet" href="./RegiAf.css">
+    <link rel="icon" href="./favicon-16x16.png">
+</head>
+<body>
+    <main>
+        <div class="form-wrapper">
+            <div class="item-wrapper">
+                <img src="./bit6.png" alt="로고이미지">
+            </div>
+            <form>        
+                <h3>짝짝짝! 회원가입을 축하합니다</h3>
+                <button type="button" id="myButton" class="findIdbtn">로그인 페이지로</button>
+            </form>
+        </div>
+    </main>
+    <script>
+        const button = document.querySelector("#myButton");
+
+        button.addEventListener('click', function() {
+        // 페이지 이동할 URL을 지정
+        const url = "http://127.0.0.1:5501/a_before_figma2/user/Login.html";
+  
+        // 현재 창에서 페이지 이동
+        window.location.href = url;
+
+        });
+    </script>
+</body>
+</html>

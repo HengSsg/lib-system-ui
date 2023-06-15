@@ -1,0 +1,36 @@
+* {
+    background-color: #fff;
+}
+main {
+position: relative;
+max-width: 360px;
+margin: 0 auto;
+padding: 60px 0 70px;
+}
+
+.form-wrapper {
+    padding: 75px 10px;
+}
+.form-wrapper h3 {
+    text-align: center;
+    color: #719474;
+}
+
+.item-wrapper {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.findIdbtn {
+    display: block;
+    width: 344px;
+    border: none;
+    margin-top: 15px;
+    height: 45px;
+    background-color: #719474;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
