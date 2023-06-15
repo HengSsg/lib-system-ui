@@ -5,26 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
-    <link rel="stylesheet" href="../css/Regi.css">
-    <link rel="icon" href="../image/favicon-16x16.png">
+    <link rel="stylesheet" href="./Regi.css">
+    <link rel="icon" href="./favicon-16x16.png">
 </head>
 <body>
     <main>
         <div class="form-wrapper">
             <div class="item-wrapper">
-                <img src="../image/bit6.png" alt="로고이미지">
+                <img src="./bit6.png" alt="로고이미지">
             </div>
-            <form>
-                <input type="text" id="userId" class="userId" placeholder="아이디">
-                <input type="password" id="userpwd" class="userpwd" placeholder="비밀번호">
-                <input type="password" id="userpwd" class="userpwd" placeholder="비밀번호 확인">
+            <form id="myForm" >
+                <small>*</small>
+                <div class="idbox">
+                    <input type="text" id="userId" class="userId" placeholder="아이디"><button type="button" class="idchk" id="idchk">아이디 확인</button><br>
+                </div>
+                <small>*</small>
+                <div class="pwbox">
+                    <input type="password" id="userpwd" class="userpwd" placeholder="비밀번호" style="width: 89%;"><button type="button" class="idchk" id="pwchk">비밀번호 확인</button>
+                </div>
+                <input type="password" id="pwdchk" class="userpwd" placeholder="비밀번호 재입력">
+
+                <small>*</small>
                 <input type="text" id="username" class="username" placeholder="이름">
-                <input type="tel" id="userphone" class="userphone" placeholder="전화번호">
-                <input type="text" id="useraddr" class="useraddr" placeholder="주소">
-                <input type="email" id="usermail" class="usermail" placeholder="이메일">
-                <button type="submit" class="regibtn">회원가입</button>
+                <div class="radiochk"> 성별
+                    <input type="radio" name="gender" value="male">남
+                    <input type="radio" name="gender" value="female">여
+                </div>
+                <small>*</small>
+                <div class="phonebox">
+                    <input type="tel" id="userphone" class="userphone" placeholder="전화번호( '-' 까지 전부 입력하세요)">
+                    <button type="button" class="idchk" id="phonechk">전화번호 확인</button>
+                </div>
+
+                <small>*</small>
+                <div class="addrbox">
+                    <input type="text" name="zipcode" id="zipcode" class="useraddr" size="7" readonly> 
+                    <input type="button" class="zipbtn" value="우편번호찾기" onclick="kakaopost()">
+                </div>
+                <input type="text" class="useraddr" name="address" id="useraddr" placeholder="상세주소(동, 호수까지 기재)">
+                <small>*</small>
+                <div class="mailbox">
+                    <input type="email" id="usermail" class="usermail" placeholder="이메일">
+                    <button type="button" class="idchk" id="mailchk">이메일 확인</button>
+                </div>
+                <div class="ckbox">
+                    <p style="margin-bottom: 3px; color: #719474; font-size: 15px; font-weight: bold;">관심있는 독서분야에 최대 3개까지 체크해주세요.</p>
+                    <input type="checkbox" class="genre" id="book1" value="mind"> 자기계발/심리
+                    <input type="checkbox" class="genre" id="book2" value="fantasy"> 판타지/과학소설
+                    <input type="checkbox" class="genre" id="book3" value="history"> 역사/사회
+                    <input type="checkbox" class="genre" id="book4" value="romance"> 로맨스/연애
+                    <input type="checkbox" class="genre" id="book5" value="philisophy"> 철학/인문학
+                    <input type="checkbox" class="genre" id="book6" value="travel"> 여행/지리
+                    <input type="checkbox" class="genre" id="book7" value="health"> 건강/요리
+                    <input type="checkbox" class="genre" id="book8" value="economic"> 경제/금융
+                </div>
+                <label for="job-select" style="color: gray;">직업 : </label>
+                <select name="jobs" id="job-select">
+                    <option value="" selected>선택</option>
+                    <option value="student">학생</option>
+                    <option value="housewife">주부</option>
+                    <option value="worker">직장인</option>
+                    <option value="jobseeker">취준생</option>
+                    <option value="soldier">군인</option>
+                    <option value="etc">기타</option>
+                </select>
+                <div class="txtbox">
+                    <p style="margin-bottom: 3px; color: #719474; font-size: 15px; font-weight: bold;">가입하게 된 구체적인 이유를 자유롭게 말해주세요.</p>
+                    <textarea cols="50" rows="10" placeholder="10자 이상 작성해주세요">
+
+                    </textarea>
+                </div>
+                <small>해당 * 부분은 필수 입력 사항 입니다</small>
+                <button type="submit" class="regibtn" id="submitbtn">회원가입</button>
             </form>
+  
         </div>
     </main>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="./Regi.js"></script>
+    <script>
+        function kakaopost() {
+            new daum.Postcode({
+                oncomplete: function(data) {
+                document.querySelector("#zipcode").value = data.zonecode;
+                document.querySelector("#useraddr").value = data.address;
+            }
+            }).open();
+        }
+
+    </script>
 </body>
 </html>
