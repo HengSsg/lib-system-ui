@@ -7,7 +7,21 @@
     <title>관리자 메인</title>
     <link rel="stylesheet" href="../css/adMain.css" />
     <link rel="icon" href="../image/favicon-16x16.png" />
-    <script src="../js/adMain.js"></script>
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      #loginBtn,
+      #logoutBtn {
+        cursor: pointer;
+      }
+
+      #logoutBtn {
+        margin-top: 10px;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <div class="header">
@@ -23,7 +37,11 @@
         <li>
           <a class="select" href="Admin_Book_Return_noData.html">도서 반납</a>
         </li>
-        <nav><img src="../image/userImg.svg" style="width: 50px" /></nav>
+        <nav>
+          <img id="loginBtn" src="../image/userImg.svg" style="width: 50px" />
+
+          <button id="logoutBtn" class="hidden">로그아웃</button>
+        </nav>
       </ul>
     </div>
     <div class="body">
@@ -60,6 +78,6 @@
         </div>
       </div>
     </div>
-
-</body>
+    <script src="../js/adMain.js"></script>
+  </body>
 </html>

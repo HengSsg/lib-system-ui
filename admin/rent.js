@@ -3,62 +3,58 @@ document.getElementById("searchBtn").addEventListener("click", function () {
   fetch("../data/rent.json")
     .then((response) => response.json())
     .then((data) => {
-      document.getElementById("name").textContent = data.userData.name;
-      document.getElementById("ID").textContent = data.userData.id;
-      document.getElementById("rentNum").textContent = data.userData.rentNum;
-      document.getElementById("status").textContent = data.userData.status;
-      document.querySelector(".searchBook").value = "";
+      let id = document.getElementById("searchID").value;
+      let user;
+      console.log(user);
+      for (let i = 0; i < data.userData.length; i++) {
+        let userInfo = data.userData[i];
+        if (userInfo.id == parseInt(id)) {
+          user = userInfo;
+        }
+      }
 
-      for (let i = 0; i < data.bookData.length; i++) {
-        var bookContainer = document.getElementById("bookData");
+      if (user != undefined) {
+        // id값이 해당하는 것이 있으면 실행
+        document.getElementById("name").textContent = user.name;
+        document.getElementById("ID").textContent = user.id;
+        document.getElementById("rentNum").textContent = user.rentNum;
+        document.getElementById("status").textContent = user.status;
+        document.querySelector(".searchBook").value = "";
 
-        var divRbookContents = document.createElement("div");
-        divRbookContents.classList.add("RbookContents");
+        for (let i = 0; i < user.bookData.length; i++) {
+          // innerHtml로 바꾸기
+          let name = user.bookData[i].name;
+          let author = user.bookData[i].author;
+          let publisher = user.bookData[i].publisher;
+          let rentDate = user.bookData[i].rentDate;
+          let returnDate = user.bookData[i].returnDate;
 
-        var divCheckbox = document.createElement("div");
-        var checkbox = document.createElement("input");
-        checkbox.setAttribute("type", "checkbox");
-        checkbox.setAttribute("name", "color");
-        checkbox.setAttribute("value", "blue");
-        divCheckbox.appendChild(checkbox);
-
-        var divImage = document.createElement("div");
-        var image = document.createElement("img");
-        image.setAttribute("src", "../image/img0" + ((i % 3) + 1) + ".jpg");
-        image.classList.add("Imageclass");
-        divImage.appendChild(image);
-
-        var divRbookInfo = document.createElement("div");
-        divRbookInfo.classList.add("RbookInfo");
-        var divInfoInner = document.createElement("div");
-        var p1 = document.createElement("p");
-        p1.textContent = "도서명: " + data.bookData[i].name;
-        var p2 = document.createElement("p");
-        p2.textContent = `저자명: ${data.bookData[i].author}`;
-        var p3 = document.createElement("p");
-        p3.textContent = `출판사: ${data.bookData[i].publisher}`;
-        divInfoInner.appendChild(p1);
-        divInfoInner.appendChild(p2);
-        divInfoInner.appendChild(p3);
-        divRbookInfo.appendChild(divInfoInner);
-
-        var divRbookInfo2 = document.createElement("div");
-        divRbookInfo2.classList.add("RbookInfo2");
-        var divInfo2Inner = document.createElement("div");
-        var p4 = document.createElement("p");
-        p4.textContent = `대출 일자: ${data.bookData[i % 10].rentDate}`;
-        var p5 = document.createElement("p");
-        p5.textContent = `반납예정일: ${data.bookData[i % 10].rentDate}`;
-        divInfo2Inner.appendChild(p4);
-        divInfo2Inner.appendChild(p5);
-        divRbookInfo2.appendChild(divInfo2Inner);
-
-        divRbookContents.appendChild(divCheckbox);
-        divRbookContents.appendChild(divImage);
-        divRbookContents.appendChild(divRbookInfo);
-        divRbookContents.appendChild(divRbookInfo2);
-
-        bookContainer.appendChild(divRbookContents);
+          var bookContainer = document.getElementById("bookData");
+          bookContainer.innerHTML += `
+          <div>
+            <div class="RbookContents">
+              <div>
+                <label><input type="checkbox" name="color" value="blue" /></label>
+              </div>
+              <div>
+                <img src="../image/img0${i + 1}.jpg" class="Imageclass" />
+              </div>
+              <div class="RbookInfo">
+                <div>
+                  <p>도서명: ${name}</p>
+                  <p>저자명: ${author}</p>
+                  <p>출판사: ${publisher}</p>
+                </div>
+              </div>
+              <div class="RbookInfo2">
+                <div>
+                  <p>대출 일자: ${rentDate}</p>
+                  <p>반납예정일: ${returnDate}</p>
+                </div>
+              </div>
+            </div>
+          </div>`;
+        }
       }
     })
     .catch((error) => console.log(error));

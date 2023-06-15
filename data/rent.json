@@ -1,50 +1,164 @@
 {
-  "userData": {
-    "id": 849382,
-    "name": "박형석",
-    "rentNum": 3,
-    "status": true
-  },
-  "bookData": [
+  "userData": [
     {
-      "name": "성낙현의 JSP 프로그래밍",
-      "author": "성낙현",
-      "publisher": "에듀윌",
-      "rentDate": "2023-03-21",
-      "returnDate": "2023-05-07",
-      "imageUrl": "http:www.image.com"
+      "id": 123451,
+      "name": "김형석",
+      "rentNum": 3,
+      "status": true,
+      "bookData": [
+        {
+          "name": "성낙현의 JSP 프로그래밍",
+          "author": "성낙현",
+          "publisher": "에듀윌",
+          "rentDate": "2023-03-21",
+          "returnDate": "2023-05-07",
+          "imageUrl": "http:www.image.com"
+        },
+        {
+          "name": "박준호의 JSP 프로그래밍",
+          "author": "박준호",
+          "publisher": "에듀윌",
+          "rentDate": "2023-06-03",
+          "returnDate": "2023-06-07",
+          "imageUrl": "http:www.image.com"
+        },
+        {
+          "name": "장은주의 JSP 프로그래밍",
+          "author": "장은주",
+          "publisher": "에듀윌",
+          "rentDate": "2023-06-05",
+          "returnDate": "2023-08-07",
+          "imageUrl": "http:www.image.com"
+        }
+      ]
     },
     {
-      "name": "박형석의 JSP 프로그래밍",
-      "author": "박형석",
-      "publisher": "어른듀윌",
-      "rentDate": "2023-06-01",
-      "returnDate": "2023-06-07",
-      "imageUrl": "http:www.image.com"
+      "id": 123452,
+      "name": "이형석",
+      "rentNum": 3,
+      "status": true,
+      "bookData": [
+        {
+          "name": "성낙현의 JSP 프로그래밍",
+          "author": "성낙현",
+          "publisher": "에듀윌",
+          "rentDate": "2023-03-21",
+          "returnDate": "2023-05-07",
+          "imageUrl": "http:www.image.com"
+        },
+        {
+          "name": "박준호의 JSP 프로그래밍",
+          "author": "박준호",
+          "publisher": "에듀윌",
+          "rentDate": "2023-06-03",
+          "returnDate": "2023-06-07",
+          "imageUrl": "http:www.image.com"
+        },
+        {
+          "name": "장은주의 JSP 프로그래밍",
+          "author": "장은주",
+          "publisher": "에듀윌",
+          "rentDate": "2023-06-05",
+          "returnDate": "2023-08-07",
+          "imageUrl": "http:www.image.com"
+        }
+      ]
     },
     {
-      "name": "신지연의 JSP 프로그래밍",
-      "author": "신지연",
-      "publisher": "에듀윌",
-      "rentDate": "2023-06-02",
-      "returnDate": "2023-06-07",
-      "imageUrl": "http:www.image.com"
+      "id": 123453,
+      "name": "삼형석",
+      "rentNum": 3,
+      "status": true,
+      "bookData": [
+        {
+          "name": "성낙현의 JSP 프로그래밍",
+          "author": "성낙현",
+          "publisher": "에듀윌",
+          "rentDate": "2023-03-21",
+          "returnDate": "2023-05-07",
+          "imageUrl": "http:www.image.com"
+        },
+        {
+          "name": "박준호의 JSP 프로그래밍",
+          "author": "박준호",
+          "publisher": "에듀윌",
+          "rentDate": "2023-06-03",
+          "returnDate": "2023-06-07",
+          "imageUrl": "http:www.image.com"
+        },
+        {
+          "name": "장은주의 JSP 프로그래밍",
+          "author": "장은주",
+          "publisher": "에듀윌",
+          "rentDate": "2023-06-05",
+          "returnDate": "2023-08-07",
+          "imageUrl": "http:www.image.com"
+        }
+      ]
     },
     {
-      "name": "박준호의 JSP 프로그래밍",
-      "author": "박준호",
-      "publisher": "에듀윌",
-      "rentDate": "2023-06-03",
-      "returnDate": "2023-06-07",
-      "imageUrl": "http:www.image.com"
+      "id": 123454,
+      "name": "백형석",
+      "rentNum": 3,
+      "status": true,
+      "bookData": [
+        {
+          "name": "성낙현의 JSP 프로그래밍",
+          "author": "성낙현",
+          "publisher": "에듀윌",
+          "rentDate": "2023-03-21",
+          "returnDate": "2023-05-07",
+          "imageUrl": "http:www.image.com"
+        },
+        {
+          "name": "박준호의 JSP 프로그래밍",
+          "author": "박준호",
+          "publisher": "에듀윌",
+          "rentDate": "2023-06-03",
+          "returnDate": "2023-06-07",
+          "imageUrl": "http:www.image.com"
+        },
+        {
+          "name": "장은주의 JSP 프로그래밍",
+          "author": "장은주",
+          "publisher": "에듀윌",
+          "rentDate": "2023-06-05",
+          "returnDate": "2023-08-07",
+          "imageUrl": "http:www.image.com"
+        }
+      ]
     },
     {
-      "name": "장은주의 JSP 프로그래밍",
-      "author": "장은주",
-      "publisher": "에듀윌",
-      "rentDate": "2023-06-05",
-      "returnDate": "2023-08-07",
-      "imageUrl": "http:www.image.com"
+      "id": 123455,
+      "name": "박형석",
+      "rentNum": 3,
+      "status": true,
+      "bookData": [
+        {
+          "name": "성낙현의 JSP 프로그래밍",
+          "author": "성낙현",
+          "publisher": "에듀윌",
+          "rentDate": "2023-03-21",
+          "returnDate": "2023-05-07",
+          "imageUrl": "http:www.image.com"
+        },
+        {
+          "name": "박준호의 JSP 프로그래밍",
+          "author": "박준호",
+          "publisher": "에듀윌",
+          "rentDate": "2023-06-03",
+          "returnDate": "2023-06-07",
+          "imageUrl": "http:www.image.com"
+        },
+        {
+          "name": "장은주의 JSP 프로그래밍",
+          "author": "장은주",
+          "publisher": "에듀윌",
+          "rentDate": "2023-06-05",
+          "returnDate": "2023-08-07",
+          "imageUrl": "http:www.image.com"
+        }
+      ]
     }
   ]
 }
