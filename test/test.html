@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>회원가입</title>
+</head>
+<body onload="init();">
+    <div class="container">
+        <div class="divBox">
+            <form>
+                <h2>회원가입</h2>
+                <div>
+                    <input type="text" name="id" placeholder="아이디" required/>
+                    <div class="validatChk" name="validatChk">존재하는 아이디입니다.</div>
+                </div>
+                <div class="pwBox">
+                    <input type="password" class="passwordIn" name="password" placeholder="비밀번호" required/> </br>
+                    <input type="password" name="passwordCk" placeholder="비밀번호 확인" required/>
+                    <div class="validatChk" name="validatChk">비밀번호가 일치하지 않습니다.</div>
+                </div>
+                <div>
+                    <input type="text" name="email" placeholder="이메일" required/>
+                    <div class="validatChk" name="validatChk">올바른 이메일 형식이 아닙니다.</div>
+                </div>
+                <div>
+                    <input type="text" name="name" placeholder="이름" required/>
+                </div>
+                <div>
+                    <input type="text" name="phone" placeholder="전화번호" required/>
+                </div>
+                <div>
+                    <div class="chkBox">
+                        <div class="chkIn">
+                            <a class="gender">성별</a>
+                            <input type="radio" name="gender" id="male" value="M"/> 
+                            <label for="male">남자</label>
+                            <input type="radio" name="gender" id="female" value="F"/> 
+                            <label for="female">여자</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <textarea placeholder="자기소개"></textarea>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="chk1" name="chk" value="1" />
+                                <label for="chk1" id="chkLabel"></label>
+                            </td>
+                            <td name="chTd" class="chTd">약관전체선택</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="chk2" name="chk" value="1" />
+                                <label for="chk2"></label>
+                            </td>
+                            <td name="chTd" class="chTd"><a style="color: #748ffc;">[필수] </a>서비스 이용약관</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="chk3" name="chk" value="1" />
+                                <label for="chk3"></label>
+                            </td>
+                            <td name="chTd" class="chTd">이벤트・혜택 정보 수신</td>
+                        </tr>
+                    </table>
+                </div>
+                <!--
+                <div>
+                    <div class="chkBox">
+                        <div>
+                            <input type="checkbox" id="chk1" name="chk" value="1" />
+                            <label for="chk1"></label>
+                            <div class="chkLabel">약관전체선택</div>
+                        </div>
+                        <div class="chkIn">
+                            <input type="checkbox" id="chk2" name="chk" value="1"/>
+                            <label for="chk2">개인정보수집 1</label>
+                        </div>
+                        <div class="chkIn">
+                            <input type="checkbox" id="chk3" name="chk" value="2"/>
+                            <label for="chk3">개인정보수집 2</label>
+                        </div>
+                    </div>
+                </div>
+                -->
+                <button type="submit" id="subBtn">회원가입</button>
+            </form>
+        </div>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+.container{
+    text-align: center;
+}
+.divBox{
+    display: inline-block;
+    width: 400px;
+}
+.divBox div{
+    margin-bottom: 20px;
+}
+div a{
+    text-align: left;
+}
+input{
+    border: 1px solid lightgray;
+    padding: 20px 60px;
+    font-size: large;
+    outline: none;
+}
+input[type="checkbox"]{
+    border: 1px solid #748ffc;
+}
+.passwordIn{
+    margin-bottom: 0.6px;
+}
+.chkBox{
+    margin-left: 30px;
+    text-align: left;
+}
+.chkIn{
+    padding: 20px 10px;
+    width: 320px;
+    border: 1px solid lightgray;
+}
+.gender{
+    margin-left: 50px;
+    margin-right: 55px;
+    font-size: large;
+    color: gray;
+}
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"] + label{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #748ffc;
+    position: relative;
+    cursor: pointer;
+  }
+input[name="chk"]:checked + label::after{
+    content:'V';
+    font-size: 18px;
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top:0;
+    color: white;
+    border: none;
+    background-color: #748ffc;
+    cursor: pointer;
+}
+.validatChk{
+    visibility: hidden;
+    color: red;
+    margin-left: 30px;
+    text-align: left;
+}
+textarea{
+    outline: none;
+    border: 1px solid lightgray;
+    padding: 20px;
+    width: 300px;
+    font-size: large;
+}
+table{
+    margin-left: 10px;
+}
+td{
+   padding-left: 20px;
+}
+.chTd{
+    cursor: pointer;
+    text-align: left;
+}
+button{
+    background-color: #748ffc;
+    border: #748ffc;
+    color: white;
+    padding: 15px 0px;
+    width: 340px;
+    font-size: large;
+    font-weight: bolder;
+}
