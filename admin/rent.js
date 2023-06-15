@@ -3,12 +3,26 @@ document.getElementById("searchBtn").addEventListener("click", function () {
   fetch("../data/rent.json")
     .then((response) => response.json())
     .then((data) => {
-      document.getElementById("name").textContent = data.userData.name;
-      document.getElementById("ID").textContent = data.userData.id;
-      document.getElementById("rentNum").textContent = data.userData.rentNum;
-      document.getElementById("status").textContent = data.userData.status;
-      document.querySelector(".searchBook").value = "";
+      var searchID = document.querySelector(".searchBook").value; // 검색할 ID
 
+      // userData 배열 순회
+      for (let i = 0; i < data.userData.length; i++) {
+        var user = data.userData[i];
+        if (user.id === searchID) {
+          var userName = user.name;
+          var userID = user.id;
+          var userRentNum = user.rentNum;
+          var userStatus = user.status;
+
+          // userData 정보를 표시하거나 조작하는 코드
+          document.getElementById("name").textContent = userName;
+          document.getElementById("ID").textContent = userID;
+          document.getElementById("rentNum").textContent = userRentNum;
+          document.getElementById("status").textContent = userStatus;
+
+          break; // 일치하는 ID를 찾았으므로 반복문을 종료합니다.
+        }
+      }
       for (let i = 0; i < data.bookData.length; i++) {
         var bookContainer = document.getElementById("bookData");
 
@@ -48,7 +62,7 @@ document.getElementById("searchBtn").addEventListener("click", function () {
         var p4 = document.createElement("p");
         p4.textContent = `대출 일자: ${data.bookData[i % 10].rentDate}`;
         var p5 = document.createElement("p");
-        p5.textContent = `반납예정일: ${data.bookData[i % 10].rentDate}`;
+        p5.textContent = `반납예정일: ${data.bookData[i % 10].returnDate}`;
         divInfo2Inner.appendChild(p4);
         divInfo2Inner.appendChild(p5);
         divRbookInfo2.appendChild(divInfo2Inner);

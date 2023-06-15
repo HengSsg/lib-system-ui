@@ -65,3 +65,8 @@ form {
     color: white;
     cursor: pointer;
 }
+
+
+.idbox {
+    display: flex;
+}

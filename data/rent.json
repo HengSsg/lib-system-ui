@@ -1,10 +1,18 @@
 {
-  "userData": {
-    "id": 849382,
-    "name": "박형석",
-    "rentNum": 3,
-    "status": true
-  },
+  "userData": [
+    {
+      "id": "849382",
+      "name": "박형석",
+      "rentNum": 3,
+      "status": true
+    },
+    {
+      "id": "123456", 
+      "name": "신지연",
+      "rentNum": 2,
+      "status": "활성화"
+    }
+  ],
   "bookData": [
     {
       "name": "성낙현의 JSP 프로그래밍",
