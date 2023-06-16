@@ -1,0 +1,47 @@
+{
+  "bookData": [
+    {
+      "no": 1,
+      "returnDate": "2023-06-24",
+      "rentDate": "2023-06-15",
+      "user_id": 1,
+      "author": "난쟁이",
+      "imageUrl": "http://image.com",
+      "name": "헨델과 그레텔",
+      "publisher": "한빛출판"
+    },
+    {
+      "no": 2,
+      "returnDate": "2023-06-24",
+      "rentDate": "2023-06-15",
+      "user_id": 1,
+      "author": "난쟁이",
+      "imageUrl": "http://image.com",
+      "name": "헨델과 그레텔2",
+      "publisher": "한빛출판"
+    },
+    {
+      "no": 3,
+      "returnDate": "2023-06-24",
+      "rentDate": "2023-06-15",
+      "user_id": 1,
+      "author": "난쟁이",
+      "imageUrl": "http://image.com",
+      "name": "헨델과 그레텔3",
+      "publisher": "한빛출판"
+    },
+    {
+      "no": 4,
+      "returnDate": "2023-06-24",
+      "rentDate": "2023-06-15",
+      "user_id": 1,
+      "author": "난쟁이",
+      "imageUrl": "http://image.com",
+      "name": "헨델과 그레텔4",
+      "publisher": "한빛출판"
+    }
+  ],
+  "name": "박형석",
+  "id": 1,
+  "status": true
+}

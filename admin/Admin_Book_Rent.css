@@ -177,7 +177,7 @@ p {
   cursor: pointer;
   box-shadow: 2px 2px 2px 2px #ced4da;
 }
-.ReturnBtn {
+#ReturnBtn {
   align-self: center;
   width: 70px;
   border: none;
